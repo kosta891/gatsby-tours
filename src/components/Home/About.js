@@ -17,7 +17,7 @@ const getAbout = graphql`
     }
     }
 `
-console.log(getAbout);
+
 const About = () => {
     const {aboutImage} = useStaticQuery(getAbout)
     return (

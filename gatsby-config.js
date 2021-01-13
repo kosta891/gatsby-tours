@@ -13,19 +13,23 @@ require("dotenv").config({
   /* Your site config here */
   siteMetadata:{
     title: 'BackRoads', 
-    description: 'Explore awesome worldwide tours and discover all.',
-    author: 'koleri.tech',
-    data: {
-      name: 'koleri',
-      age: 31
-    }
+    description: 'Explore awesome worldwide tours and discover all',
+    author:"koleri.dev",
+    data:{
+      name: 'kole',
+      age: 32
+    },
+    twitterUsername: "@johndoe",
+    image: './connectBcg.jpeg', 
+    siteUrl: 'https://gatsby-ture.netlify.app'
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
-    
+    `gatsby-plugin-playground`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
