@@ -31,7 +31,7 @@ const BlogListTemplate = (props) => {
                     {Array.from({length: numPages}, (_,i) =>{
                         return <AniLink fade key={i} to={`/blogs/${i === 0 ? "" : i + 1}`} className={i + 1 === currentPage ? `${styles.link} ${styles.active}`: `${styles.link}`} >{i + 1}</AniLink>
                     })}
-                     {!isLast && <AniLink fade to={nextPage} className={styles.link}>Next</AniLink>}
+                    {!isLast && <AniLink fade to={nextPage} className={styles.link}>Next</AniLink>}
                 </section>
         </section>
         </Layout>
