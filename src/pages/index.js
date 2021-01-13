@@ -15,7 +15,7 @@ export default function Home({data}) {
   return ( 
    
       <Layout >
-        <SEO title='Home' />
+        <SEO title='Home'  />
 
         <StyledHero home={true} img={data.defaultBcg.childImageSharp.fluid}>
           <Banner title="continue exploring" info='neki dodatni text opis' >
