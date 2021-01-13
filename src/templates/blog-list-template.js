@@ -23,7 +23,9 @@ const BlogListTemplate = (props) => {
                 {data.posts.edges.map(({node})=>{
                     return <BlogCard key={node.id} blog={node} />
                 })}
-                <section className={styles.links} >
+               
+            </div>
+             <section className={styles.links} >
                     {!isFirst && <AniLink fade to={prevPage} className={styles.link}>Prev</AniLink>}
                     
                     {Array.from({length: numPages}, (_,i) =>{
@@ -31,7 +33,6 @@ const BlogListTemplate = (props) => {
                     })}
                      {!isLast && <AniLink fade to={nextPage} className={styles.link}>Next</AniLink>}
                 </section>
-            </div>
         </section>
         </Layout>
     )
