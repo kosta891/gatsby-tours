@@ -3,13 +3,15 @@ import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import {graphql} from 'gatsby'
 import Tours from '../components/Tours/Tours'
-
+import SEO from '../components/SEO'
 
 const tours = ({data}) => {
 
     
     return (
         <Layout>
+            <SEO title="Tours" description="Tours that will blow your mind."/>
+    
             <StyledHero img={data.defaultBcg.childImageSharp.fluid} />
             <Tours />
         </Layout>

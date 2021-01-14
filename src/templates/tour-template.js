@@ -7,6 +7,8 @@ import Image from 'gatsby-image'
 import {FaMoneyBillWave, FaMap} from 'react-icons/fa'
 import Day from '../components/SingleTour/Day'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import SEO from '../components/SEO'
+
 
 const Template = ({data}) => {
     const{name, price, country, days, start, description:{description}, journey, images} = data.tour
@@ -14,6 +16,7 @@ const Template = ({data}) => {
     const [mainImage, ...tourImages] = images
     return (
         <Layout>
+          <SEO title={name} description="Tours that will blow your mind."/>
             <StyledHero img={mainImage.fluid} />
             <section className={styles.template} >
                 <div className={styles.center} >

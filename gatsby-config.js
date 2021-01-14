@@ -30,6 +30,15 @@ require("dotenv").config({
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sitemap`,
+      {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://https://gatsby-ture.netlify.app',
+        sitemap: 'https://https://gatsby-ture.netlify.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
