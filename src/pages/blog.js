@@ -20,8 +20,8 @@ export const query = graphql `
   query {
     blogBcg: file(relativePath:{eq:"blogBcg.jpeg"}){
       childImageSharp{
-        fluid{
-          ...GatsbyImageSharpFluid
+        fluid(quality:90 maxWidth:4160){
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
