@@ -7,10 +7,10 @@ import SEO from '../components/SEO'
 
 const tours = ({data}) => {
 
-    
+    console.log(data);
     return (
         <Layout>
-            <SEO title="Tours" description="Tours that will blow your mind."/>
+            <SEO title="Tours" description="Tours that will blow your mind"/>
     
             <StyledHero img={data.defaultBcg.childImageSharp.fluid} />
             <Tours />
@@ -20,10 +20,10 @@ const tours = ({data}) => {
 
 export const query = graphql `
   query {
-    defaultBcg: file(relativePath:{eq:"defaultBcg.png"}){
+    defaultBcg: file(relativePath:{eq:"defaultBcg.jpeg"}){
       childImageSharp{
-        fluid(quality:90 maxWidth:4160){
-          ...GatsbyImageSharpFluid_withWebp
+        fluid{
+          ...GatsbyImageSharpFluid
         }
       }
     }
