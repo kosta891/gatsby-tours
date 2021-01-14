@@ -20,8 +20,8 @@ export const query = graphql `
   query {
     conntactBcg: file(relativePath:{eq:"connectBcg.jpeg"}){
       childImageSharp{
-        fluid(quality:90 maxWidth:4160){
-          ...GatsbyImageSharpFluid_withWebp
+        fluid{
+          ...GatsbyImageSharpFluid
         }
       }
     }

@@ -9,6 +9,7 @@ const Page404 = () => {
     return (
         <Layout>
             <SEO title="Error" description="Page not found 404."/>
+            
             <header className={styles.error}>
                 <Banner title="oops it's a dead end">
                     <AniLink fade to='/' className='btn-white'>

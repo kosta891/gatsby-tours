@@ -7,7 +7,7 @@ import SEO from '../components/SEO'
 
 const tours = ({data}) => {
 
-    console.log(data);
+    
     return (
         <Layout>
             <SEO title="Tours" description="Tours that will blow your mind"/>

@@ -10,7 +10,7 @@ const getAbout = graphql`
     aboutImage: file(relativePath:{eq:"defaultBcg.jpeg"}){
         childImageSharp{
         fluid(maxWidth:600){
-            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFluid
 
         }
         }
